@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">음주측정기</string>
+    <string name="action_settings1">Start</string>
+    <string name="action_settings2">진단보기</string>
+    <string name="action_settings3">bluetooth</string>
+
+    <string name="alert_msg_exit">Do you want to close this window ?</string>
+    <string name="button_yes">yes</string>
+    <string name="button_no">no</string>
+</resources>

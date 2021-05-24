@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_bluetooth_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="블루투스 ON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="173dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:text="setting_btn"
+        app:layout_constraintStart_toEndOf="@+id/btnConnect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_bluetooth_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="블루투스 OFF"
+        app:layout_constraintStart_toEndOf="@+id/bt_bluetooth_on"
+        app:layout_constraintTop_toTopOf="@+id/bt_bluetooth_on" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="연결하기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_bluetooth_on" />
+
+    <TextView
+        android:id="@+id/tvReceiveData"
+        android:layout_width="311dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:text="Receive"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/btnSendData"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendData" />
+
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="전송"
+        app:layout_constraintStart_toStartOf="@+id/btnConnect"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+</android.support.constraint.ConstraintLayout>
